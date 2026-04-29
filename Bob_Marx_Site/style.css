@@ -1,3 +1,4 @@
+/* Estilização Geral */
 *{
   padding: 0;
   margin: 0;
@@ -7,12 +8,20 @@ html{
   background-color: #FFFFFF;
 }
 
+main {
+  padding-top: 1.5rem;
+}
+
+
+/* Estilização da Header */
+
 header{
   background-color: #ff9023;
   color: white;
-  padding: 2rem;
+  padding: 1rem;
   position: fixed;
   width: 100%;
+  top: 0;
 }
 
 nav {
@@ -26,6 +35,105 @@ nav a {
   padding-right: 3rem;
 }
 
-main {
-  padding-top: 5rem;
+/* Estilização da Home */
+
+.text-home{
+  text-align: center;
+}
+
+.home {
+  padding-top: 6rem;
+}
+
+.home h1{
+  padding-left: 4rem;
+}
+
+.home p{
+  padding-top: 0.5rem;
+  padding-bottom: 3.5rem;
+  font-size: 1rem;
+}
+
+.interative-home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home a{
+  padding-top: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 0.75rem;
+}
+
+.home button{
+  font-size: 10px;
+  background-color: #ff9023;
+  width: 150px;
+  height: 25px;
+  color: white;
+  border-radius: 100px;
+  border: none;
+}
+
+/* Estilização do Sobre */
+
+.sobre{
+  display: flex;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.sobre h1{
+  padding-left: 2.5rem;
+}
+
+.sobre p{
+  padding-top: 1rem;
+  padding-left: 2.5rem;
+}
+
+
+/* Estilização da Final Page */
+
+.final-page{
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.final-page h1{
+  font-size: 2rem;
+}
+
+.final-page h2{
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.final-page p{
+  font-size: 1rem;
+  padding-bottom: 2rem;
+
+}
+
+.final-page button{
+  font-size: 10px;
+  background-color: #ff9023;
+  width: 150px;
+  height: 25px;
+  color: white;
+  border-radius: 100px;
+  border: none;
+}
+
+
+/* Estilização do Footer */
+
+footer{
+  color: #FFFFFF;
+  padding: 0.5rem;
+  background: #ff9023;
 }
