@@ -13,6 +13,12 @@ main {
 }
 
 
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+p{ font-family: 'Quicksand', sans-serif;}
+
 /* Estilização da Header */
 
 header{
@@ -29,10 +35,17 @@ nav {
   justify-content: space-between;
 }
 
+nav p{
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
 nav a {
   text-decoration: none;
   color: white;
   padding-right: 3rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.75rem;
 }
 
 /* Estilização da Home */
