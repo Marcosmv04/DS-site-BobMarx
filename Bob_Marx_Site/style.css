@@ -24,7 +24,14 @@ h1, h2 {
   font-family: 'Playfair Display', serif;
 }
 
-p{ font-family: 'Quicksand', sans-serif;}
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+p{ font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
 
 /* Estilização da Header */
 
@@ -35,6 +42,7 @@ header{
   position: fixed;
   width: 100%;
   top: 0;
+  height: 4%;
 }
 
 nav {
@@ -45,15 +53,20 @@ nav {
 nav p{
   font-family: 'Playfair Display', serif;
   font-weight: bold;
+  padding-left: 10rem;
+  padding-top: 0rem;
+  font-size: 1.5rem;
 }
 
 nav a {
   text-decoration: none;
   color: white;
-  padding-right: 3rem;
+  padding-right: 10rem;
   font-family: 'Quicksand', sans-serif;
-  font-size: 0.75rem;
+  font-size: 1.1rem;
   padding-bottom: 0rem;
+  padding-top: 0.5rem;
+  font-weight: bold;
 }
 
 .moon-simbol {
@@ -65,6 +78,8 @@ nav a {
 }
 
 
+
+
 /* Estilização da Home */
 
 .text-home{
@@ -72,24 +87,34 @@ nav a {
 }
 
 .home {
-  padding-top: 6rem;
+  padding-top: 10rem;
+  padding-bottom: 15rem;
 }
 
 .home h1{
-  padding-left: 4rem;
+  padding-left: 8rem;
   color: #ff9023;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 .home h2{
   color: var(--tit--color1);
-  font-size: 2rem;
+  font-size: 5rem;
+  padding-right: 8rem;
+}
+
+.home h3{
+  font-size: 1.5rem;
+  color: var(--p--color);
+  align-items: center;
+  padding-top: 0.5rem;
+
 }
 
 .home p{
   padding-top: 0.5rem;
-  padding-bottom: 3.5rem;
-  font-size: 1rem;
+  padding-bottom: 6rem;
+  font-size: 1.5rem;
   color: var(--p--color);
 }
 
@@ -101,18 +126,18 @@ nav a {
 }
 
 .home a{
-  padding-top: 1.5rem;
+  padding-top: 3rem;
   text-decoration: none;
   color: var(--hm--a--color);
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-family: 'Quicksand', sans-serif;
 }
 
 .home button{
-  font-size: 10px;
+  font-size: 20px;
   background-color: #ff9023;
-  width: 150px;
-  height: 25px;
+  width: 300px;
+  height: 50px;
   color: white;
   border-radius: 100px;
   border: none;
@@ -150,25 +175,41 @@ nav a {
 .final-page{
   text-align: center;
   padding-top: 40rem;
-  padding-bottom: 40rem;
+  padding-bottom: 15rem;
 }
 
 .final-page h1{
-  font-size: 2rem;
+  font-size: 5rem;
   color: var(--tit--color1);
 }
 
-.final-page p{
-  font-size: 1rem;
-  padding-bottom: 2rem;
+.final-page h2{
+  font-size: 5rem;
+  color: var(--tit--color1);
+  padding-top: 0rem;
+}
+
+.final-page h3{
+  font-size: 1.5rem;
   color: var(--p--color);
+  align-items: center;
+  padding-top: 1rem;
+  font-family: 'Quicksand', sans-serif,
+}
+
+.final-page p{
+  font-size: 1.5rem;
+  color: var(--p--color);
+  align-items: center;
+  font: bold;
+  padding-bottom: 5rem;
 }
 
 .final-page button{
-  font-size: 10px;
+  font-size: 20px;
   background-color: #ff9023;
-  width: 150px;
-  height: 25px;
+  width: 300px;
+  height: 50px;
   color: white;
   border-radius: 100px;
   border: none;
