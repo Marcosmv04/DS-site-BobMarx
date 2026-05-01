@@ -78,10 +78,12 @@ nav a {
 .home h1{
   padding-left: 4rem;
   color: #ff9023;
+  font-size: 2rem;
 }
 
 .home h2{
   color: var(--tit--color1);
+  font-size: 2rem;
 }
 
 .home p{
@@ -121,7 +123,7 @@ nav a {
 
 .sobre{
   display: flex;
-  padding-top: 8rem;
+  padding-top: 40rem;
   padding-bottom: 8rem;
 }
 
@@ -136,13 +138,19 @@ nav a {
   color: var(--p--color);
 }
 
+/* Estilização do Grade Page */
+
+.grade-page{
+  display: flex;
+  padding-top: 40rem;
+}
 
 /* Estilização da Final Page */
 
 .final-page{
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 40rem;
+  padding-bottom: 40rem;
 }
 
 .final-page h1{
