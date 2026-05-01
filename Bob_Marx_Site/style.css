@@ -1,17 +1,24 @@
 /* Estilização Geral */
+
 *{
   padding: 0;
   margin: 0;
 }
 
+:root{
+  --bg: white;
+  --tit--color1: black;
+  --p--color: black;
+  --hm--a--color: black;
+}
+
 html{
-  background-color: #FFFFFF;
+  background-color: var(--bg);
 }
 
 main {
   padding-top: 1.5rem;
 }
-
 
 h1, h2 {
   font-family: 'Playfair Display', serif;
@@ -46,7 +53,17 @@ nav a {
   padding-right: 3rem;
   font-family: 'Quicksand', sans-serif;
   font-size: 0.75rem;
+  padding-bottom: 0rem;
 }
+
+.moon-simbol {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 
 /* Estilização da Home */
 
@@ -60,12 +77,18 @@ nav a {
 
 .home h1{
   padding-left: 4rem;
+  color: #ff9023;
+}
+
+.home h2{
+  color: var(--tit--color1);
 }
 
 .home p{
   padding-top: 0.5rem;
   padding-bottom: 3.5rem;
   font-size: 1rem;
+  color: var(--p--color);
 }
 
 .interative-home{
@@ -78,8 +101,9 @@ nav a {
 .home a{
   padding-top: 1.5rem;
   text-decoration: none;
-  color: black;
+  color: var(--hm--a--color);
   font-size: 0.75rem;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .home button{
@@ -90,6 +114,7 @@ nav a {
   color: white;
   border-radius: 100px;
   border: none;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* Estilização do Sobre */
@@ -99,13 +124,16 @@ nav a {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
+
 .sobre h1{
   padding-left: 2.5rem;
+  color: var(--tit--color1);
 }
 
 .sobre p{
   padding-top: 1rem;
   padding-left: 2.5rem;
+  color: var(--p--color);
 }
 
 
@@ -119,17 +147,13 @@ nav a {
 
 .final-page h1{
   font-size: 2rem;
-}
-
-.final-page h2{
-  font-size: 2rem;
-  padding-bottom: 1rem;
+  color: var(--tit--color1);
 }
 
 .final-page p{
   font-size: 1rem;
   padding-bottom: 2rem;
-
+  color: var(--p--color);
 }
 
 .final-page button{
@@ -149,4 +173,18 @@ footer{
   color: #FFFFFF;
   padding: 0.5rem;
   background: #ff9023;
+  color: #FFFFFF;
+}
+
+/* Estilização Modo Dark */
+.dark-mode:root{
+  --bg: black;
+  --tit--color1: white;
+  --p--color: white;
+  --hm--a--color: white;
+}
+
+#Moon {
+  cursor: pointer; 
+  user-select: none; 
 }
