@@ -20,6 +20,7 @@ html{
 
 main {
   padding-top: 1.5rem;
+  overflow: hidden;
 }
 
 h1, h2 {
@@ -78,17 +79,32 @@ nav a {
   'opsz' 24
 }
 
-
-
-
 /* Estilização da Home */
 
 #home {
   padding-top: 10rem;
   padding-bottom: 5rem;
   position: relative;
-  overflow: hidden;
+  min-height: 40rem;
 }
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background-image: 
+    radial-gradient(circle at 15% 15%, #ff9023 0%, transparent 50%),
+    radial-gradient(circle at 85% 20%, #ff9023 0%, transparent 40%),
+    radial-gradient(circle at 50% 85%, #ff9023 0%, transparent 40%);
+  opacity: 15%;
+  z-index: -1;
+  pointer-events: none;
+}
+
 
 .text-home{
   text-align: center;
@@ -142,52 +158,60 @@ nav a {
   font-family: 'Quicksand', sans-serif;
 }
 
-.color {
-  content: "";
-  position: absolute;
-  height: 150%;
-  width: 55%;
-  background-image: radial-gradient(closest-side, #ff9023, var(--bg));
-  opacity: 0.4;
-  z-index: -1;
-  top: -20rem;
-  left: -15rem;
-  pointer-events: none;
-}
-
-.color2 {
-  content: "";
-  position: absolute;
-  height: 120%rem;
-  width: 40rem;
-  background-image: radial-gradient(closest-side, #ff9023, var(--bg));
-  opacity: 0.4;
-  z-index: -1;
-  top: -20rem;
-  left: 85rem;
-  pointer-events: none;
-}
-
-
 /* Estilização do Sobre */
 
 #sobre{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-between;
   padding-top: 15rem;
   padding-bottom: 5rem;
   scroll-margin-top: 10rem;
+  min-height: 40rem;
+  position: relative;
+}
+
+#sobre::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-image: 
+   radial-gradient(circle at 10% 10%, #ff9023 0%, transparent 50%),
+   radial-gradient(circle at 10% 90%, #ff9023 0%, transparent 20%),
+   radial-gradient(circle at 90% 10%, #ff9023 0%, transparent 40%);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 15%;
+}
+
+#sobre img{
+  width: 30%;
+  height: auto;
+  border-radius: 20%;
+  margin-right: 9rem;
+}
+ 
+.text-sobre {
+  max-width: 50%;
 }
 
 #sobre h1{
-  padding-left: 2.5rem;
+  padding-left: 5rem;
   color: var(--tit--color1);
+  font-size: 5rem;
+  font-weight: lighter;
 }
 
 #sobre p{
   padding-top: 1rem;
-  padding-left: 2.5rem;
+  padding-left: 5.5rem;
   color: var(--p--color);
+  font-weight: lighter;
+  font-size: 1.5rem;
+  text-align: justify;
 }
 
 /* Estilização do Grade Page */
@@ -196,7 +220,7 @@ nav a {
   display: flex;
   padding-top: 15rem;
   padding-bottom: 5rem;
-  
+  min-height: 40rem;
 }
 
 /* Estilização da Final Page */
@@ -205,6 +229,24 @@ nav a {
   text-align: center;
   padding-top: 15rem;
   padding-bottom: 5rem;
+  position: relative;
+  min-height: 40rem;
+}
+
+#final-page::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: 
+    radial-gradient(circle at 20% 90%, #ff9023 0%, transparent 40%),
+    radial-gradient(circle at 50% 20%, #ff9023 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, #ff9023 0%, transparent 40%);
+  opacity: 15%;
+  z-index: -1;
+  pointer-events: none;
 }
 
 #final-page h1{
