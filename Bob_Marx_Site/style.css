@@ -1,6 +1,4 @@
-/* =========================
-   RESET / BASE
-========================= */
+/* Estilização Básica */
 
 *{
   padding: 0;
@@ -33,9 +31,7 @@ main{
   overflow: hidden;
 }
 
-/* =========================
-   TIPOGRAFIA
-========================= */
+/* TIPOGRAFIA */
 
 h1, h2{
   font-family: 'Playfair Display', serif;
@@ -50,9 +46,7 @@ p, a, button{
   font-family: 'Quicksand', sans-serif;
 }
 
-/* =========================
-   BOTÃO
-========================= */
+/* BOTÃO */
 
 button{
   width: 30rem;
@@ -70,9 +64,7 @@ button{
   transition: 0.3s;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header{
   background-color: #ff9023;
@@ -465,4 +457,62 @@ footer{
   #final-page button{
     width: min(300px, 90%);
   }
+}
+
+/* Toggle Dark Mode */
+
+.ml-mode{
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"]{
+  appearance: none;
+
+  width: 4.5rem;
+  height: 2.2rem;
+
+  background: #e7e7e7;
+
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  position: relative;
+
+  transition: 0.4s;
+
+  box-shadow:
+  0px 4px 8px 1px rgba(0, 0, 0, 0.274);
+}
+
+input[type="checkbox"]::before{
+  content: '';
+
+  position: absolute;
+
+  width: 1.8rem;
+  height: 1.8rem;
+
+  border-radius: 50%;
+
+  background: var(--bola--bg);
+
+  top: 50%;
+  left: 0.2rem;
+
+  transform: translateY(-50%);
+
+  transition: 0.4s;
+
+  box-shadow:
+  0px 4px 8px 1px rgba(0, 0, 0, 0.466);
+}
+
+input[type="checkbox"]:checked{
+  background: #764000;
+}
+
+input[type="checkbox"]:checked::before{
+  left: 2.5rem;
 }
