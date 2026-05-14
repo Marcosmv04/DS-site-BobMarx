@@ -1,4 +1,6 @@
-/* Estilização Geral */
+/* =========================
+   RESET / BASE
+========================= */
 
 *{
   padding: 0;
@@ -31,8 +33,11 @@ main{
   overflow: hidden;
 }
 
-h1,
-h2{
+/* =========================
+   TIPOGRAFIA
+========================= */
+
+h1, h2{
   font-family: 'Playfair Display', serif;
 }
 
@@ -41,13 +46,33 @@ h3{
   font-weight: bold;
 }
 
-p,
-a,
-button{
+p, a, button{
   font-family: 'Quicksand', sans-serif;
 }
 
-/* Estilização da Header */
+/* =========================
+   BOTÃO
+========================= */
+
+button{
+  width: 30rem;
+  height: 5rem;
+
+  border: none;
+  border-radius: 100px;
+
+  background-color: #ff9023;
+  color: white;
+
+  font-size: 1.8rem;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* =========================
+   HEADER
+========================= */
 
 header{
   background-color: #ff9023;
@@ -58,7 +83,6 @@ header{
 
   position: fixed;
   top: 0;
-
   z-index: 1000;
 }
 
@@ -70,9 +94,7 @@ nav{
 
 .bob-a{
   text-decoration: none;
-
   color: white;
-
   font-size: 2rem;
   font-weight: bold;
 }
@@ -85,14 +107,14 @@ nav{
 
 .nav-right a{
   text-decoration: none;
-
   color: white;
-
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-/* Estilização da Home */
+/* =========================
+   HOME
+========================= */
 
 #home{
   padding-top: 10rem;
@@ -110,14 +132,8 @@ nav{
 
 #home::before{
   content: "";
-
   position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
+  inset: 0;
 
   background-image:
     radial-gradient(circle at 15% 15%, #ff9023 0%, transparent 50%),
@@ -125,9 +141,7 @@ nav{
     radial-gradient(circle at 50% 85%, #ff9023 0%, transparent 40%);
 
   opacity: var(--radial--transparence);
-
   z-index: -1;
-
   pointer-events: none;
 }
 
@@ -137,25 +151,19 @@ nav{
 
 #home h1{
   color: #ff9023;
-
   font-size: 6rem;
-
   padding-left: 8rem;
 }
 
 #home h2{
   color: var(--tit--color1);
-
   font-size: 5rem;
-
   padding-right: 8rem;
-
   font-weight: lighter;
 }
 
 #home p{
   color: var(--p--color);
-
   font-size: 1.8rem;
   font-weight: 500;
 
@@ -167,44 +175,19 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
   gap: 2rem;
-}
-
-#home button{
-  width: 30rem;
-  height: 5rem;
-
-  border: none;
-  border-radius: 100px;
-
-  background-color: #ff9023;
-
-  color: white;
-
-  font-size: 1.8rem;
-
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-#home button:hover{
-  transform: translateY(-3px);
 }
 
 #home a{
   text-decoration: none;
-
   color: var(--hm--a--color);
-
   font-size: 1.2rem;
-
   opacity: 65%;
 }
 
-/* Estilização do Sobre */
+/* =========================
+   SOBRE
+========================= */
 
 #sobre{
   min-height: 100vh;
@@ -214,7 +197,6 @@ nav{
   align-items: center;
 
   gap: 5rem;
-
   padding: 10rem;
 
   position: relative;
@@ -222,14 +204,8 @@ nav{
 
 #sobre::before{
   content: "";
-
   position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
+  inset: 0;
 
   background-image:
     radial-gradient(circle at 10% 10%, #ff9023 0%, transparent 50%),
@@ -237,9 +213,7 @@ nav{
     radial-gradient(circle at 90% 10%, #ff9023 0%, transparent 40%);
 
   opacity: var(--radial--transparence);
-
   z-index: -1;
-
   pointer-events: none;
 }
 
@@ -249,47 +223,37 @@ nav{
 
 #sobre h1{
   color: var(--tit--color1);
-
   font-size: 5rem;
-
   font-weight: lighter;
 }
 
 #sobre p{
   color: var(--p--color);
-
   font-size: 2rem;
   font-weight: lighter;
 
   text-align: justify;
-
   padding-top: 2rem;
 }
 
 #sobre img{
   width: 35rem;
-
   border-radius: 3rem;
 }
 
-/* Estilização do Grade Page */
+/* =========================
+   GRID / FLIP CARDS
+========================= */
 
 #grade-page{
   padding: 10rem;
-
   position: relative;
 }
 
 #grade-page::before{
   content: "";
-
   position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
+  inset: 0;
 
   background-image:
     radial-gradient(circle at 10% 10%, #ff9023 0%, transparent 50%),
@@ -297,15 +261,12 @@ nav{
     radial-gradient(circle at 90% 10%, #ff9023 0%, transparent 40%);
 
   opacity: var(--radial--transparence);
-
   z-index: -1;
-
   pointer-events: none;
 }
 
 #grade-page h1{
   color: var(--gp--h1--color);
-
   font-size: 5rem;
   font-weight: bolder;
 }
@@ -313,92 +274,78 @@ nav{
 .grid-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 4rem;
-
   padding-top: 4rem;
 }
 
+/* CARD BASE */
 .grid-item{
-  background-color: #ff9023;
-
-  border-radius: 4rem;
-
-  overflow: hidden;
-
   position: relative;
-  z-index: 0;
-
-  transition: transform 0.3s ease;
+  height: 30rem;
+  perspective: 1000px;
 }
 
-.grid-item:hover{
-  transform: translateY(-8px);
-}
-
-.grid-item::before{
-  content: '';
-
-  position: absolute;
-
-  top: -2px;
-  left: -2px;
-
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-
-  border-radius: 4rem;
-
-  background: linear-gradient(
-    45deg,
-    #764000,
-    #9c5a0d,
-    #764000
-  );
-
-  background-size: 300%;
-
-  filter: blur(12px);
-
-  z-index: -1;
-
-  opacity: 0;
-
-  transition: opacity 0.4s ease-in-out;
-
-  animation: glow 6s linear infinite;
-}
-
-.grid-item:hover::before{
-  opacity: 1;
-}
-
-.grid-item img{
+/* INNER FLIP */
+.card-inner{
   width: 100%;
   height: 100%;
+  position: relative;
 
-  display: block;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.grid-item:hover .card-inner{
+  transform: rotateY(180deg);
+}
+
+/* FRONT / BACK BASE */
+.card-front,
+.card-back{
+  position: absolute;
+  inset: 0;
+
+  backface-visibility: hidden;
 
   border-radius: 4rem;
+  overflow: hidden;
 }
 
-@keyframes glow{
+/* 🔥 FRONT CORRIGIDO (MESMO PADRÃO DO BACK) */
+.card-front{
+  background: #ff9023;
 
-  0%{
-    background-position: 0% 50%;
-  }
-
-  50%{
-    background-position: 100% 50%;
-  }
-
-  100%{
-    background-position: 0% 50%;
-  }
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Estilização da Final Page */
+/* IMAGEM PADRÃO */
+.card-front img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BACK */
+.card-back{
+  transform: rotateY(180deg);
+
+  background: #ff9023;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* =========================
+   FINAL PAGE
+========================= */
 
 #final-page{
   min-height: 80vh;
@@ -409,7 +356,6 @@ nav{
   align-items: center;
 
   text-align: center;
-
   gap: 3rem;
 
   padding: 5rem;
@@ -419,14 +365,8 @@ nav{
 
 #final-page::before{
   content: "";
-
   position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
+  inset: 0;
 
   background-image:
     radial-gradient(circle at 20% 90%, #ff9023 0%, transparent 40%),
@@ -434,61 +374,36 @@ nav{
     radial-gradient(circle at 80% 80%, #ff9023 0%, transparent 40%);
 
   opacity: var(--radial--transparence);
-
   z-index: -1;
-
   pointer-events: none;
 }
 
 #final-page h1{
   color: var(--tit--color1);
-
   font-size: 5rem;
 }
 
 #final-page p{
   color: var(--p--color);
-
   font-size: 2rem;
 }
 
-#final-page button{
-  width: 30rem;
-  height: 5rem;
-
-  border: none;
-  border-radius: 100px;
-
-  background-color: #ff9023;
-
-  color: white;
-
-  font-size: 1.8rem;
-
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-#final-page button:hover{
-  transform: translateY(-3px);
-}
-
-/* Estilização do Footer */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
   background-color: #ff9023;
-
   color: white;
-
   padding: 2rem;
-
   text-align: center;
 }
 
-/* Estilização Modo Dark */
+/* =========================
+   DARK MODE
+========================= */
 
-.dark-mode:root{
+:root.dark-mode{
   --bg: black;
   --tit--color1: white;
   --p--color: white;
@@ -498,65 +413,9 @@ footer{
   --bola--bg: white;
 }
 
-/* Toggle Dark Mode */
-
-.ml-mode{
-  display: flex;
-  align-items: center;
-}
-
-input[type="checkbox"]{
-  appearance: none;
-
-  width: 4.5rem;
-  height: 2.2rem;
-
-  background: #e7e7e7;
-
-  border-radius: 999px;
-
-  cursor: pointer;
-
-  position: relative;
-
-  transition: 0.4s;
-
-  box-shadow:
-  0px 4px 8px 1px rgba(0, 0, 0, 0.274);
-}
-
-input[type="checkbox"]::before{
-  content: '';
-
-  position: absolute;
-
-  width: 1.8rem;
-  height: 1.8rem;
-
-  border-radius: 50%;
-
-  background: var(--bola--bg);
-
-  top: 50%;
-  left: 0.2rem;
-
-  transform: translateY(-50%);
-
-  transition: 0.4s;
-
-  box-shadow:
-  0px 4px 8px 1px rgba(0, 0, 0, 0.466);
-}
-
-input[type="checkbox"]:checked{
-  background: #764000;
-}
-
-input[type="checkbox"]:checked::before{
-  left: 2.5rem;
-}
-
-/* Responsividade */
+/* =========================
+   RESPONSIVO
+========================= */
 
 @media (max-width: 768px){
 
@@ -574,29 +433,20 @@ input[type="checkbox"]:checked::before{
   #grade-page h1,
   #final-page h1{
     font-size: 3.5rem;
-
     padding: 0;
-
     text-align: center;
   }
 
   #home p,
   #final-page p{
     font-size: 1.5rem;
-
     text-align: center;
-
     padding-inline: 2rem;
   }
 
   #sobre{
     flex-direction: column;
-
     padding: 6rem 2rem;
-  }
-
-  #sobre p{
-    font-size: 1.7rem;
   }
 
   #sobre img{
@@ -608,13 +458,11 @@ input[type="checkbox"]:checked::before{
   }
 
   .grid-container{
-    grid-template-columns:
-    repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   #home button,
   #final-page button{
     width: min(300px, 90%);
   }
-
 }
