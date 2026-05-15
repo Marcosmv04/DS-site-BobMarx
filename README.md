@@ -36,6 +36,6 @@ Java Script: Interatividade, dinamismo e acessibilidade.
 
 TypeBot: Integracao do ChatBot.
 
-xxx: Hospedagem e publicação do site.
+Github pages: Hospedagem e publicação do site.
 
 # Acesse o site
