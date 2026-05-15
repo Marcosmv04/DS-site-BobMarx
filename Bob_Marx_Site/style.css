@@ -46,7 +46,7 @@ p, a, button{
   font-family: 'Quicksand', sans-serif;
 }
 
-/* BOTÃO */
+/* BOTÕES */
 
 button{
   width: 30rem;
@@ -104,9 +104,7 @@ nav{
   font-weight: bold;
 }
 
-/* =========================
-   HOME
-========================= */
+/* HOME */
 
 #home{
   padding-top: 10rem;
@@ -177,9 +175,7 @@ nav{
   opacity: 65%;
 }
 
-/* =========================
-   SOBRE
-========================= */
+/* SOBRE */
 
 #sobre{
   min-height: 100vh;
@@ -233,9 +229,7 @@ nav{
   border-radius: 3rem;
 }
 
-/* =========================
-   GRID / FLIP CARDS
-========================= */
+/* GRID */
 
 #grade-page{
   padding: 10rem;
@@ -270,14 +264,12 @@ nav{
   padding-top: 4rem;
 }
 
-/* CARD BASE */
 .grid-item{
   position: relative;
   height: 30rem;
   perspective: 1000px;
 }
 
-/* INNER FLIP */
 .card-inner{
   width: 100%;
   height: 100%;
@@ -291,9 +283,7 @@ nav{
   transform: rotateY(180deg);
 }
 
-/* FRONT / BACK BASE */
-.card-front,
-.card-back{
+.card-front, .card-back{
   position: absolute;
   inset: 0;
 
@@ -303,7 +293,6 @@ nav{
   overflow: hidden;
 }
 
-/* 🔥 FRONT CORRIGIDO (MESMO PADRÃO DO BACK) */
 .card-front{
   background: #ff9023;
 
@@ -312,14 +301,12 @@ nav{
   align-items: center;
 }
 
-/* IMAGEM PADRÃO */
 .card-front img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* BACK */
 .card-back{
   transform: rotateY(180deg);
 
@@ -335,9 +322,7 @@ nav{
   padding: 2rem;
 }
 
-/* =========================
-   FINAL PAGE
-========================= */
+/* FINAL PAGE */
 
 #final-page{
   min-height: 80vh;
@@ -380,21 +365,18 @@ nav{
   font-size: 2rem;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
   background-color: #ff9023;
   color: white;
   padding: 2rem;
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
 }
 
-/* =========================
-   DARK MODE
-========================= */
-
+/* DARK MODE */
 :root.dark-mode{
   --bg: black;
   --tit--color1: white;
@@ -403,60 +385,6 @@ footer{
   --gp--h1--color: #ff9023;
   --radial--transparence: 10%;
   --bola--bg: white;
-}
-
-/* =========================
-   RESPONSIVO
-========================= */
-
-@media (max-width: 768px){
-
-  nav{
-    gap: 2rem;
-  }
-
-  .nav-right{
-    gap: 1rem;
-  }
-
-  #home h1,
-  #home h2,
-  #sobre h1,
-  #grade-page h1,
-  #final-page h1{
-    font-size: 3.5rem;
-    padding: 0;
-    text-align: center;
-  }
-
-  #home p,
-  #final-page p{
-    font-size: 1.5rem;
-    text-align: center;
-    padding-inline: 2rem;
-  }
-
-  #sobre{
-    flex-direction: column;
-    padding: 6rem 2rem;
-  }
-
-  #sobre img{
-    width: 90%;
-  }
-
-  #grade-page{
-    padding: 6rem 2rem;
-  }
-
-  .grid-container{
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  #home button,
-  #final-page button{
-    width: min(300px, 90%);
-  }
 }
 
 /* Toggle Dark Mode */
@@ -515,4 +443,56 @@ input[type="checkbox"]:checked{
 
 input[type="checkbox"]:checked::before{
   left: 2.5rem;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px){
+
+  nav{
+    gap: 2rem;
+  }
+
+  .nav-right{
+    gap: 1rem;
+  }
+
+  #home h1,
+  #home h2,
+  #sobre h1,
+  #grade-page h1,
+  #final-page h1{
+    font-size: 3.5rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  #home p,
+  #final-page p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-inline: 2rem;
+  }
+
+  #sobre{
+    flex-direction: column;
+    padding: 6rem 2rem;
+  }
+
+  #sobre img{
+    width: 90%;
+  }
+
+  #grade-page{
+    padding: 6rem 2rem;
+  }
+
+  .grid-container{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  #home button,
+  #final-page button{
+    width: min(300px, 90%);
+  }
 }
