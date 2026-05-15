@@ -1,1 +1,2 @@
-# DS-site-BobMarx
+O site Bob Marx tem como objetivo viabilizar o acesso a educação na área de filosofia e sociologia, introduzindo a tecnologia na educação de forma eficaz. O seu assistente de humanas, Bob Marx, está pronto para lhe atender! Encontre o acesso ao chatbot por uma plataforma com interface moderna, simples, responsiva e dentro dos princípios visuais para uma melhor experiência do usuário. Tire suas dúvidas, aprenda com diversos métodos e avance no futuro com a ajuda do seu assistente Bob Marx!
+
