@@ -38,4 +38,6 @@ TypeBot: Integracao do ChatBot.
 
 Github pages: Hospedagem e publicação do site.
 
-# Acesse o site
+# Testes de Usabilidade
+
+A página passou por testes para garantir uma boa experiência do usuário e facil usabilidade dentro da plataforma.
